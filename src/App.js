@@ -74,11 +74,11 @@ function ChatRoom() {
       createdAt: firebase.firestore.FieldValue.serverTimestamp(),
       uid,
       photoURL
-    });
+    })
 
     setFormValue('');
 
-    placeholder.current.scrollIntoView({ behavior: 'smooth' })
+    placeholder.current.scrollIntoView({ behavior: 'smooth' });
   }
 
   return (
@@ -91,8 +91,8 @@ function ChatRoom() {
       </main>
 
       <form onSubmit={sendMessage}>
-        <input value = {formValue} onChange={(e) => setFormValue(e.target.value)} />
-        <button type="submit">✅</button>
+        <input value = {formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="send a message" />
+        <button type="submit" disabled={!formValue}>⚡</button>
       </form>
     </>
   )
