@@ -1,3 +1,115 @@
+body {
+  background-color: black;
+}
+
 .App {
   text-align: center;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.App header {
+  background-color: slateblue;
+  color: white;
+  width: 100%;
+  max-width: 720px;
+  height: 10vh;
+  min-height: 50px;
+  position: fixed;
+}
+
+.App section {
+  background-color: midnightblue;
+  min-height: 100vh;
+}
+
+main {
+  height: 80vh;
+}
+
+main::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+main::-webkit-scrollbar-track {
+  background: slategray;
+}
+
+main::-webkit-scrollbar-thumb {
+  background: slateblue;
+}
+
+form {
+  background-color: slategray;
+  height: 10vh;
+  width: 100%;
+  max-width: 728px;
+  font-size: 1.5rem;
+}
+
+form button {
+  background-color: slateblue;
+  width: 20%;
+}
+
+
+input {
+  background: black;
+  color: white;
+  width: 100%;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+button {
+  background-color: seagreen;
+  color: white;
+  font-size: 1.25rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+
+.sign-in {
+  color: black;
+  background: white;
+  max-width: 400px;
+}
+
+ul, li {
+  text-align: left;
+  list-style: none;
+}
+
+p {
+  color: white;
+  text-align: center;
+  max-width: 500px;
+  line-height: 24px;
+  position: relative;
+}
+
+.message {
+  align-items: center;
+}
+
+.sent p {
+  color: white;
+  background: blue;
+}
+.received p {
+  background: #e5e5ea;
+  color: black;
+}
+
+img {
+  width: 40px;
+  height: 40px;
 }
